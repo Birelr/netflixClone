@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(1, 8, 28);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.head1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 1.5rem;
+        margin-top: 24px;
+
+}
+.logo svg{
+    color: rgba(229, 9, 20, 1);
+    fill: currentColor;
+    width: 6rem;
+    height: 2rem;
+}
+.btngiris{
+    border-radius: 0.25rem;
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+    border: 0;
+    transition-duration: 250ms;
+    transition-property: background-color,border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+
+
+}
+
+.head1 div+div{
+    text-align: right;
+}
+.btngiris:hover{
+    background: rgb(163, 38, 33);
+
+}
+.btngiris:active{
+    background: rgb(153,22,29);
+}
+.secici1{
+    background: transparent;
+    color: #ffff;
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+    margin-right: 10px;
+
+}
