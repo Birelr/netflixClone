@@ -61,3 +61,21 @@ body{
     margin-right: 10px;
 
 }
+.content1{
+    background-image: linear-gradient(to left, rgba(86, 10, 10, 0.5), rgba(5, 25, 45, 0.5)), url("/assets/netflixhome.jpeg");
+    color: #ffff;
+    background-size: cover;
+    height: 500px;
+    margin: 1em;
+    border-radius: 2rem;
+
+}
+.baslik2{
+    font-size: 1.9em;
+    padding: 4rem 2rem 0.8rem;
+}
+.p1{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.3em;
+}
