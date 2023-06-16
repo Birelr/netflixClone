@@ -18,15 +18,18 @@
         </div>
         <div class="head2">
 
-              <div class="butnfc">
+              <div>
                 <object class="worldh" data="/assets/world.svg" type="image/svg+xml"></object>
     
                 <select class="secici1">         
-                    <option class="lang" value=""> Türkçe </option> 
+                    <option class="lang" value=""> Türkçe </option>
+                      
                     <option class="lang" value="">English </option>
                 </select>
-                <button class="btngiris">Oturum Aç </button>
               </div>
+
+              
+            <button class="btngiris">Oturum Aç </button>
         </div>
     </header>
     <div class="container1">
@@ -116,33 +119,205 @@
         </div>
         
     </div>
-    <div  class="container4">
-        <a href="#">Yardım Merkezi</a>
-        <a href="#">Hesap</a>
-        <a href="#">Medya Merkezi</a>
-        <a href="#">Yatırımcı İlişkileri</a>
-        <a href="#">İ imkanları</a>
-        <a href="#">Hediye Kartı Kullan</a>
-        <a href="#">İzleme Yolları</a>
-        <a href="#">Kullanım Koşulları</a>
-        <a href="#">Gizlilik</a>
-        <a href="#">Çerez Tercihleri</a>
-        <a href="#">Kurumsal Bilgiler</a>
-        <a href="#">Bize Ulaşın</a>
-        <a href="#">Hız Testi</a>
-        <a href="#">Yasal Hükümler</a>
-        <a href="#">Sadece Netflix'te</a>
-        <div class="secici2">
-            <object class="world2" data="/assets/world.svg" type="image/svg+xml"></object>
-            <select class="secici2">         
-                <option class="lang" value=""> Türkçe </option> 
-                <option class="lang" value="">English </option>
-            </select>
-            <p class="net"> Netflix Türkiye</p>
-        </div>
-        
-    </div>
 </body>
 <script src="/script.js"></script>
 </html>
 
+
+body{
+    background-color: rgb(1, 8, 28);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.head1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 24px;
+
+}
+.logo svg{
+    color: rgba(229, 9, 20, 1);
+    fill: currentColor;
+    width: 6rem;
+    height: 2rem;
+    padding-left: 25px;
+}
+.btngiris{
+    border-radius: 0.25rem;
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+    border: 0;
+    transition-duration: 250ms;
+    transition-property: background-color,border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+
+
+}
+
+
+
+.head1 div+div{
+    text-align: right;
+    padding-right: 25px;
+}
+.btngiris:hover{
+    background: rgb(163, 38, 33);
+
+}
+.worldh{
+    height: 15px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 7px;
+
+}
+
+.btngiris:active{
+    background: rgb(153,22,29);
+}
+.secici1{
+    background: transparent;
+    color: #ffff;
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 2rem;
+    margin-right: 10px;
+
+}
+
+.container1{
+    display: flex;
+  align-items: start; 
+  justify-content: center; 
+  height: 70vh;
+  background-image: linear-gradient(65deg,  rgba(10, 36, 63, 0.5), rgba(101, 10, 10, 0.5)), url("/assets/netflixhome.jpeg");
+    color: #ffff;
+    background-size: cover;
+    height: 500px;
+    margin: 0.9em;
+    padding: 3rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+.baslik2{
+    font-size: 2.5em;
+}
+.p1{
+    font-size: 1.2em;
+}
+.epostaadres{
+    border-radius: 5px;
+    background-color: #252525b5;
+    border-color: #ffff;
+    color: #ffff;
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    min-width: 15rem;
+}
+.epostaadres::placeholder{
+    color: rgba(216, 216, 216, 0.708);
+}
+.basla{
+    border-radius: 0.25rem;
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+    border: 0;
+    padding: 0.9rem 2rem;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+    font-size: 1.2rem;
+
+}
+.container2{
+    color: #ffff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(120deg, #ff000000, #6d0f0a7d);
+}
+
+.imgcont{
+    display: block;
+max-width: 100%;
+z-index: 2;
+}
+
+hr{
+    background-color: #a4a4a42d;
+    height: 7px;
+    border: none;
+}
+.container3{
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+
+.accordion {
+    background-color: rgb(22, 33, 66);
+    color: #ffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 0.5rem;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: rgb(38, 51, 95);
+  }
+  
+  .panel {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 19px;
+    background-color: rgb(22, 33, 66);
+    display: none;
+    overflow: hidden;
+    color: #ffff;
+  }
+  .accordion svg{
+    width: 1rem;
+    height: 1rem;
+    float: right;
+  }
+  .gorunmez{
+    background-color: transparent;
+  }
+  .link1{
+    color: rgb(179, 181, 187);
+  }
+  .phonequest{
+    margin-top: 5rem;
+    color: rgb(179, 181, 187);
+  }
